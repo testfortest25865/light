@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
@@ -28,17 +32,17 @@
           <ul
             class="d-flex justify-content-around align-items-center flex-wrap"
           >
-            <li class="nav_li"><a href="">Главная</a></li>
-            <li class="nav_li"><a href="">Услуги</a></li>
-            <li class="nav_li"><a href="">Кейсы</a></li>
-            <li class="nav_li"><a href="">О нас</a></li>
+            <li class="nav_li"><a href="index.html">Главная</a></li>
+            <li class="nav_li"><a href="#smm">Услуги</a></li>
+            <li class="nav_li"><a href="keys.html">Кейсы</a></li>
+            <li class="nav_li"><a href="#nas">О нас</a></li>
           </ul>
           <div
             class="call d-flex flex-column justify-content-center align-items-center"
           >
             <a
               class="phone_link d-flex justify-content-center align-items-center"
-              href=""
+              href="tel:+998908081083"
               ><img
                 class="d-block w-100 h-100"
                 style="max-width: 16px"
@@ -46,7 +50,7 @@
                 alt=""
               />+998 (90) 808-10-83</a
             >
-            <a class="zayavka_link" href="">ОСТАВИТЬ ЗАЯВКУ</a>
+            <a class="zayavka_link" href="#form">ОСТАВИТЬ ЗАЯВКУ</a>
           </div>
         </div>
       </nav>
@@ -55,9 +59,7 @@
         <input type="checkbox" />
         <span class="menu"> <span class="hamburger"></span> </span>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="nav_li"><a href="keys.html">Кейсы</a></li>
         </ul>
       </label>
     </header>
@@ -69,7 +71,7 @@
           class="container container_reklama d-flex justify-content-between align-items-center flex-wrap"
         >
           <div
-            class="left_reklama d-flex justify-content-center align-items-center"
+            class="wow animate__animated animate__fadeInUp left_reklama d-flex justify-content-center align-items-center"
           >
             <h3>
               ТВОЙ <br />
@@ -100,7 +102,7 @@
 
       <!-- НАША -->
 
-      <section class="nasha">
+      <section id="nas" class="nasha">
         <div class="container-fluid container_nasha">
           <h3>НАША</h3>
           <div class="cards_nasha d-flex flex-wrap">
@@ -111,7 +113,10 @@
               </div>
               <p>Сделать ваш бизнес видимым</p>
             </div>
-            <div class="card_nasha w-100" style="max-width: 450px">
+            <div
+              class="card_nasha w-100 wow animate__animated animate__fadeInUp"
+              style="max-width: 450px"
+            >
               <div class="top_nasha d-flex align-items-center">
                 <img src="img/2.png" alt="философия" />
                 <h4>ФИЛОСОФИЯ</h4>
@@ -134,7 +139,7 @@
       </section>
 
       <!-- smm -->
-      <section class="smm smm_section">
+      <section id="smm" class="smm smm_section">
         <div
           class="container container_smm d-flex justify-content-between align-items-end flex-wrap"
         >
@@ -156,7 +161,9 @@
           </div>
           <div class="right_smm">
             <h5>подробнее</h5>
-            <div class="slider slider_smm">
+            <div
+              class="slider slider_smm wow animate__animated animate__fadeInRight"
+            >
               <div class="slider_inner">
                 <h6>Запуск таргетированной рекламы</h6>
                 <p>
@@ -220,8 +227,8 @@
         <div
           class="container container_button d-flex justify-content-end align-items-center flex-wrap"
         >
-          <a class="first_button" href="">Портфолио</a>
-          <a href="">Подать заявку</a>
+          <a class="first_button" href="keys.html">Портфолио</a>
+          <a href="#form">Подать заявку</a>
         </div>
         <img class="bg__smm" src="img/smm_bg.png" alt="" />
         <img class="one" src="img/smm_one.png" alt="первый" />
@@ -232,8 +239,37 @@
       <section class="opit">
         <div class="container container_opit">
           <h3>Опыт работы</h3>
-          <img class="timer" src="img/timer.png" alt="таймер" />
-          <!-- <script src="//megatimer.ru/get/8736490278f0702f64c41b2b911f4055.js"></script> -->
+
+          <div
+            id="timer"
+            class="timer d-flex justify-content-center align-items-center flex-wrap"
+          >
+            <div class="timer_ timer_one">
+              <h4>1690</h4>
+              <h5>ДНЕЙ</h5>
+            </div>
+            <div class="timer_colon">
+              <p>:</p>
+            </div>
+            <div class="timer_ timer_two">
+              <h4>17</h4>
+              <h5>ЧАСОВ</h5>
+            </div>
+            <div class="timer_colon">
+              <p>:</p>
+            </div>
+            <div class="timer_ timer_three">
+              <h4>10</h4>
+              <h5>МИНУТ</h5>
+            </div>
+            <div class="timer_colon">
+              <p>:</p>
+            </div>
+            <div class="timer_ timer_four">
+              <h4>30</h4>
+              <h5>СЕКУНД</h5>
+            </div>
+          </div>
         </div>
         <img class="pos_opit" src="img/line_opit.png" alt="лайнер" />
       </section>
@@ -245,7 +281,9 @@
         >
           <div class="left_sayt">
             <h5>ПОДРОБНЕЕ</h5>
-            <div class="slider slider_sayt">
+            <div
+              class="slider slider_sayt wow animate__animated animate__fadeInLeft"
+            >
               <div class="slider_inner">
                 <h6>Соврменный дизайн</h6>
                 <p>
@@ -339,8 +377,8 @@
         <div
           class="container sayt_button d-flex justify-content-start align-items-center flex-wrap"
         >
-          <a class="sayt_button_pos" href="">Портфолио</a>
-          <a href="">Подать заявку</a>
+          <a class="sayt_button_pos" href="keys.html">Портфолио</a>
+          <a href="#form">Подать заявку</a>
         </div>
 
         <img class="sayt__bg" src="img/sayt_bg.png" alt="" />
@@ -393,7 +431,7 @@
           <div
             class="container container_button d-flex justify-content-end align-items-center flex-wrap"
           >
-            <a class="pp" href="">Подать заявку</a>
+            <a class="pp" href="#form">Подать заявку</a>
           </div>
         </div>
 
@@ -422,7 +460,9 @@
           </div>
           <div class="right_smm right_seo">
             <h5>подробнее</h5>
-            <div class="slider slider_seo">
+            <div
+              class="slider slider_seo wow animate__animated animate__fadeInRight"
+            >
               <div class="slider_inner">
                 <h6>Запуск таргетированной рекламы</h6>
                 <p>
@@ -471,8 +511,8 @@
         <div
           class="container container_button d-flex justify-content-end align-items-center flex-wrap"
         >
-          <a class="first_button" href="">Портфолио</a>
-          <a href="">Подать заявку</a>
+          <a class="first_button" href="keys.html">Портфолио</a>
+          <a href="#form">Подать заявку</a>
         </div>
 
         <img class="seo__bg" src="img/smm_bg.png" alt="" />
@@ -486,19 +526,31 @@
         <div
           class="contaier container_dosti d-flex justify-content-around align-items-center flex-wrap"
         >
-          <img src="" alt="" />
-          <ul>
-            <li>ДОВОЛЬНЫХ ЗАКАЗЧИКОВ</li>
-            <li>УСПЕШНЫХ ПРОЕКТОВ</li>
-            <li>ИЗГОТОВЛЕННЫХ ВЫВЕСОК</li>
-            <li>РАЗРАБОТАННЫХ ОБЪЕКТОВ</li>
-          </ul>
+          <div
+            id="slider_progress"
+            class="slider_progress d-flex justify-content-center align-items-center flex-wrap"
+          >
+            <div class="left_progress">
+              <p>6000</p>
+              <p>42</p>
+              <p>60</p>
+              <p>40</p>
+            </div>
+            <div class="right_progress d-flex align-items-center">
+              <ul>
+                <li>ДОВОЛЬНЫХ ЗАКАЗЧИКОВ</li>
+                <li>УСПЕШНЫХ ПРОЕКТОВ</li>
+                <li>ИЗГОТОВЛЕННЫХ ВЫВЕСОК</li>
+                <li>РАЗРАБОТАННЫХ САЙТОВ</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- форма -->
 
-      <section class="sec_form">
+      <section id="form" class="sec_form">
         <div class="container container_form">
           <h4>
             При заказе SMM продвижения <span> БЕСПЛАТНО </span> разработаем
@@ -517,7 +569,7 @@
                 <button type="submit">Отправить</button>
               </form>
             </div>
-            <div class="schet">
+            <div class="schet wow animate__animated animate__fadeInRight">
               <h6>До конца акции осталось:</h6>
               <script src="//megatimer.ru/get/ad75170bc48d901291214d78daa2d088.js"></script>
             </div>
@@ -598,7 +650,7 @@
           </div>
         </div>
 
-        <a class="dov_vse" href="">Смотреть все</a>
+        <a class="dov_vse" href="keys.html">Смотреть все</a>
       </section>
     </main>
 
@@ -611,17 +663,17 @@
           <ul
             class="d-flex justify-content-around align-items-center flex-wrap"
           >
-            <li class="nav_li"><a href="">Главная</a></li>
-            <li class="nav_li"><a href="">Услуги</a></li>
-            <li class="nav_li"><a href="">Кейсы</a></li>
-            <li class="nav_li"><a href="">О нас</a></li>
+            <li class="nav_li"><a href="index.html">Главная</a></li>
+            <li class="nav_li"><a href="#smm">Услуги</a></li>
+            <li class="nav_li"><a href="keys.html">Кейсы</a></li>
+            <li class="nav_li"><a href="#nas">О нас</a></li>
           </ul>
           <div
             class="call d-flex flex-column justify-content-center align-items-center"
           >
             <a
               class="phone_link d-flex justify-content-center align-items-center"
-              href=""
+              href="tel: +998908081083"
               ><img
                 class="d-block w-100 h-100"
                 style="max-width: 16px"
@@ -662,5 +714,10 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="script.js"></script>
+
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

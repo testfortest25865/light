@@ -114,6 +114,7 @@ select {
 
 body {
   background: #fff;
+  overflow-x: hidden;
 }
 
 .header_nav {
@@ -137,6 +138,7 @@ body {
 
 .nav_li a:hover {
   text-decoration: none;
+  color: #d03333;
 }
 
 .phone_link {
@@ -155,7 +157,7 @@ body {
 
 .phone_link:hover {
   text-decoration: none;
-  color: #18191a;
+  color: #d03333;
 }
 
 .zayavka_link {
@@ -176,7 +178,6 @@ body {
 
 .zayavka_link:hover {
   color: #fff;
-  text-decoration: none;
 }
 
 /* реклама */
@@ -358,6 +359,8 @@ body {
   text-align: left;
   margin-bottom: 42px;
   color: #d03333;
+  position: relative;
+  z-index: 1;
 }
 
 .slider {
@@ -391,7 +394,7 @@ body {
 }
 
 .container_button a:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .first_button {
@@ -454,8 +457,8 @@ body {
 
 .seo {
   position: absolute;
-  top: -180px;
-  right: -160px;
+  top: -100px;
+  right: -80px;
 }
 
 .smm_section {
@@ -472,16 +475,12 @@ body {
 .one {
   position: absolute;
   top: 425px;
-  left: 130px;
+  left: 5%;
 }
 
 /* опыт */
 
 .opit {
-  background: url(img/opit_bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 150px;
   padding-bottom: 150px;
   position: relative;
@@ -503,10 +502,42 @@ body {
   position: absolute;
   top: 0;
   left: 87px;
+  z-index: -1;
 }
 
 .timer {
   margin: 0 auto;
+  gap: 20px;
+}
+
+.timer_ h4 {
+  font-family: "Montserrat 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 122px;
+  letter-spacing: 0.085em;
+  color: #d03333;
+  text-align: center;
+}
+
+.timer_ h5 {
+  font-family: "Montserrat 400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  color: #18191a;
+  text-align: center;
+}
+
+.timer_colon p {
+  font-family: "Montserrat 300";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 122px;
+  letter-spacing: 0.085em;
 }
 
 /* сайт */
@@ -533,7 +564,7 @@ body {
 .sayt_number {
   position: absolute;
   top: 400px;
-  right: 200px;
+  right: 10%;
 }
 
 .right_sayt h4 {
@@ -574,7 +605,7 @@ body {
 .nout {
   position: absolute;
   top: -200px;
-  left: -200px;
+  left: -100px;
 }
 
 .right_sayt ul {
@@ -610,7 +641,7 @@ body {
 }
 
 .sayt_button a:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .sayt_button_pos {
@@ -620,7 +651,7 @@ body {
 /* полиграфия */
 
 .poligrafia {
-  padding-top: 78px;
+  padding-top: 58px;
   padding-bottom: 78px;
   position: relative;
 }
@@ -646,7 +677,7 @@ body {
   font-size: 42px;
   line-height: 60px;
   color: #18191a;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   text-align: center;
 }
@@ -814,7 +845,7 @@ body {
 /* seo */
 
 .right_seo {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .left_seo {
@@ -834,7 +865,31 @@ body {
 .seo_four {
   position: absolute;
   top: 436px;
-  left: 120px;
+  left: 5%;
+}
+
+/* стижения */
+
+.dosti h4 {
+  font-family: "Montserrat 500";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  color: #000000;
+  text-align: center;
+
+  margin-bottom: 72px;
+}
+
+.dosti {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.right_progress ul {
+  margin-bottom: 0;
+  list-style: none;
 }
 
 /* форма */
@@ -980,7 +1035,7 @@ body {
 }
 
 .dov_vse:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #fff;
 }
 
@@ -1014,7 +1069,138 @@ body {
   left: 35%;
 }
 
+/* портфолио */
+
+.keys {
+  background: url(img/sky.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.keys_reklama {
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 200px;
+}
+
+.phone_keys{
+  position: absolute;
+  top: 350px;
+  right: 35%;
+}
+
+.book_keys{
+  position: absolute;
+  top: 400px;
+  right: 50%;
+}
+
+.zayavka_header {
+  position: absolute;
+  top: 330px;
+  left: 40px;
+
+  background: #d03333;
+  border-radius: 30px 0px;
+  padding: 20px;
+
+  font-family: "Montserrat 500";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.zayavka_header:hover{
+  /* text-decoration: none; */
+  color: #fff;
+}
+
+.port h4 {
+  font-family: "Muller 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 120%;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 34px;
+}
+
+.zayav {
+  display: block;
+}
+
+.col-10,
+.col-md-6 {
+  padding: 0;
+}
+
+.card_port img {
+  width: 100%;
+}
+
+.proekti {
+  margin-bottom: 34px;
+}
+
+.proekti h5 {
+  font-family: "Muller 400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #222222;
+}
+
+.proekti p {
+  background: #d03333;
+  border: 1px solid #ff0000;
+  border-radius: 124px;
+  padding: 20px;
+
+  font-family: "Muller 400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.port a {
+  background: #d03333;
+  border-radius: 30px 0px;
+  padding: 20px;
+  font-family: "Montserrat 500";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: block;
+
+  color: #ffffff;
+
+  max-width: 225px;
+
+  margin: 0 auto;
+
+  text-align: center;
+  margin-top: 70px;
+}
+
 @media (max-width: 500px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  
   /* бургер */
 
   .mobile_burger {
@@ -1244,6 +1430,7 @@ body {
 
   .slider {
     width: 100vw;
+    padding: 40px;
   }
 
   .left_smm li {
@@ -1256,8 +1443,24 @@ body {
     list-style: none;
   }
 
+  .container_button,
+  .sayt_button {
+    justify-content: center !important;
+  }
+
+  .first_button,
+  .sayt_button_pos {
+    margin: 0 auto;
+  }
+
   .smm_section {
     padding-bottom: 50px;
+  }
+
+  .container_button a,
+  .sayt_button a {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .one {
@@ -1279,6 +1482,18 @@ body {
     color: #18191a;
     margin-bottom: 33px;
     text-align: center;
+  }
+
+  .timer_{
+    display: block;
+  }
+
+  .timer_colon{
+    display: none;
+  }
+
+  .timer{
+    flex-direction: column;
   }
 
   /* сайты */
