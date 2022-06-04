@@ -2,6 +2,13 @@ $(function () {
   $(".slider_smm").slick();
   $(".slider_sayt").slick();
   $(".slider_seo").slick();
+  $(".slider_m_polygrafiya").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1200,
+  });
   $(".slider_port").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
