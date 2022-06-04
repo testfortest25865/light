@@ -1187,21 +1187,21 @@ body {
 }
 
 @media (max-width: 500px) {
-  body,
+  /* body,
   html {
     overflow-x: hidden;
   }
 
   .menu {
     overflow: hidden;
-  }
+  } */
 
   /* бургер */
 
-  .header_nav,
+  /* .header_nav,
   .mobile_burger {
     overflow: hidden;
-  }
+  } */
 
   .mobile_burger {
     display: block !important;
@@ -1209,11 +1209,11 @@ body {
 
   label .menu {
     position: absolute;
-    right: -100px;
-    top: -80px;
+    right: 0px;
+    top: 0px;
     z-index: 100;
-    width: 200px;
-    height: 200px;
+    width: 30px;
+    height: 30px;
     background: #fff;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: 0.5s ease-in-out;
@@ -1224,8 +1224,8 @@ body {
 
   label .hamburger {
     position: absolute;
-    top: 135px;
-    left: 50px;
+    top: 60px;
+    right: 25px;
     width: 30px;
     height: 2px;
     background: #d03333;
