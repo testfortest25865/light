@@ -1198,6 +1198,11 @@ body {
 
   /* бургер */
 
+  .header_nav,
+  .mobile_burger {
+    overflow: hidden;
+  }
+
   .mobile_burger {
     display: block !important;
   }
