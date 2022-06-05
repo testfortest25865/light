@@ -859,7 +859,7 @@ body {
   left: 5%;
 }
 
-/* стижения */
+/* достижения */
 
 .dosti h4 {
   font-family: "Montserrat 500";
@@ -881,6 +881,15 @@ body {
 .right_progress ul {
   margin-bottom: 0;
   list-style: none;
+}
+
+.right_progress li {
+  font-family: "Montserrat 400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  color: #18191a;
 }
 
 /* форма */
@@ -1187,21 +1196,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  /* body,
-  html {
-    overflow-x: hidden;
-  }
-
-  .menu {
-    overflow: hidden;
-  } */
-
   /* бургер */
-
-  /* .header_nav,
-  .mobile_burger {
-    overflow: hidden;
-  } */
 
   .mobile_burger {
     display: block !important;
@@ -1342,6 +1337,11 @@ body {
 
   /*наша реклама */
 
+  .proekti p{
+    max-width: 270px;
+    width: 100%;
+  }
+
   .book_keys {
     display: none;
   }
@@ -1388,7 +1388,8 @@ body {
     margin: 0 auto;
   }
 
-  .header1 {
+  .header1,
+  .header2 {
     display: none;
   }
 
@@ -1460,8 +1461,24 @@ body {
     margin-bottom: 20px;
   }
 
-  .phone_m_link_footer:hover{
+  .phone_m_link_footer:hover {
     color: #fff;
+  }
+
+  .container_nasha h3 {
+    margin-top: 50px;
+  }
+
+  .container_button a,
+  .sayt_button a {
+    max-width: 200px;
+    width: 100%;
+    padding: 18px 20px;
+    text-align: center;
+  }
+
+  .poligrafia h4::before {
+    content: url(none);
   }
 
   /* наша цель */
@@ -1777,8 +1794,8 @@ body {
     font-family: "Montserrat 700";
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 28px;
+    line-height: 32px;
     color: #000000;
     margin-bottom: 51px;
   }
