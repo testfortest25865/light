@@ -1337,7 +1337,11 @@ body {
 
   /*наша реклама */
 
-  .proekti p{
+  .mobile_footer {
+    display: flex !important;
+  }
+
+  .proekti p {
     max-width: 270px;
     width: 100%;
   }
@@ -1467,6 +1471,7 @@ body {
 
   .container_nasha h3 {
     margin-top: 50px;
+    margin-bottom: 0;
   }
 
   .container_button a,
@@ -1480,11 +1485,15 @@ body {
   .poligrafia h4::before {
     content: url(none);
   }
+  .form_form {
+    padding: 30px 20px 40px;
+  }
 
   /* наша цель */
 
   .card_nasha {
     padding: 25px;
+    padding-top: 15px;
     border: none;
     vertical-align: top;
   }
@@ -1541,7 +1550,7 @@ body {
   }
 
   .smm {
-    padding-top: 200px;
+    padding-top: 170px;
     overflow: hidden;
   }
 
@@ -1777,9 +1786,17 @@ body {
 
   /* seo */
 
+  .right_seo{
+    margin-top: 30px;
+  }
+
+  .seo_four{
+    display: none;
+  }
+
   .seo_section {
     margin-top: 0;
-    padding-top: 330px;
+    padding-top: 310px;
     padding-bottom: 50px;
   }
 
